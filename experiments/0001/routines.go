@@ -1,5 +1,7 @@
 package main
 
+import "sandbox_golang/experiments/0001/golang"
+
 func main() {
-	println("Hello, World!")
+	golang.Slow()
 }
