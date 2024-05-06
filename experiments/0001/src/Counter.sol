@@ -15,4 +15,17 @@ contract Counter {
     function decrement() public {
         number--;
     }
+
+    function reset() public {
+        number = 0;
+    }
+
+    function getNumber() public view returns (uint256) {
+        return number;
+    }
+
+    function getNumberPlus10() public view returns (uint256) {
+        /// BinaryOpMutation(`+` |==> `%`) of: `return number + 10;`
+        return number%10;
+    }
 }
