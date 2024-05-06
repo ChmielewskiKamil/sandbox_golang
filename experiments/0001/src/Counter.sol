@@ -25,7 +25,6 @@ contract Counter {
     }
 
     function getNumberPlus10() public view returns (uint256) {
-        /// BinaryOpMutation(`+` |==> `%`) of: `return number + 10;`
-        return number%10;
+        return number + 10;
     }
 }
